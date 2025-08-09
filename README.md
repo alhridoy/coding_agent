@@ -2,7 +2,6 @@
 
 A production-ready sandboxed coding agent that creates pull requests automatically. This service takes a GitHub repository URL and coding prompt, then autonomously implements the requested changes and creates a pull request with real-time streaming updates.
 
-**Built for the Backspace coding agent takehome challenge.**
 
 ## ⚡ Quick Start
 
