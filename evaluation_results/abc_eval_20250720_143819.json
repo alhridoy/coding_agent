@@ -1,0 +1,68 @@
+{
+  "summary": {
+    "total_tests": 4,
+    "passed": 3,
+    "failed": 1,
+    "success_rate": 75.0,
+    "average_execution_time": 155.0
+  },
+  "backspace_metrics": {
+    "streaming_compliance": {
+      "score": 85
+    },
+    "pr_quality_score": 66.25,
+    "specification_adherence": {
+      "overall_adherence": 72.5
+    },
+    "ready_for_production": false
+  },
+  "results": [
+    {
+      "test_id": "demo_simple_readme",
+      "status": "passed",
+      "execution_time": 90.0,
+      "pr_url": "https://github.com/example/repo/pull/861",
+      "error": null
+    },
+    {
+      "test_id": "demo_health_endpoint",
+      "status": "passed",
+      "execution_time": 150.0,
+      "pr_url": "https://github.com/example/repo/pull/638",
+      "error": null
+    },
+    {
+      "test_id": "demo_improve_performance",
+      "status": "failed",
+      "execution_time": 180.0,
+      "pr_url": null,
+      "error": "Task specification too vague; No measurable success criteria; Expected outcomes not specific enough"
+    },
+    {
+      "test_id": "demo_input_validation",
+      "status": "passed",
+      "execution_time": 200.0,
+      "pr_url": "https://github.com/example/repo/pull/322",
+      "error": null
+    }
+  ],
+  "tier_performance": {
+    "tier1_basic": {
+      "count": 2,
+      "success_rate": 75.0,
+      "average_time": 120.0,
+      "ready": true
+    },
+    "tier2_intermediate": {
+      "count": 2,
+      "success_rate": 50.0,
+      "average_time": 175.0,
+      "ready": false
+    }
+  },
+  "recommendations": [
+    "CRITICAL: 1 false positives detected - implement stricter PR validation",
+    "Improve task specifications - 1 tests have ambiguous requirements",
+    "Continue using ABC-compliant evaluation to maintain benchmark quality"
+  ]
+}

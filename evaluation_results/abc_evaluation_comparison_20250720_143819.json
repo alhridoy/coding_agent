@@ -1,0 +1,186 @@
+{
+  "report_metadata": {
+    "generated_at": "2025-07-20T14:38:19.919437",
+    "evaluation_timestamp": "20250720_143819",
+    "api_base_url": "http://localhost:8000",
+    "github_token_configured": false
+  },
+  "comparison_summary": {
+    "basic_evaluation": {
+      "success_rate": 100.0,
+      "avg_execution_time": 120.0,
+      "provides_confidence_scores": false,
+      "validates_task_specifications": false,
+      "checks_environment_isolation": false,
+      "detects_shortcuts": false
+    },
+    "abc_evaluation": {
+      "original_success_rate": 100.0,
+      "true_success_rate": 75.0,
+      "overestimation_rate": 25.0,
+      "avg_confidence_score": 0.6625,
+      "avg_abc_compliance": 0.725,
+      "provides_confidence_scores": true,
+      "validates_task_specifications": true,
+      "checks_environment_isolation": true,
+      "detects_shortcuts": true
+    }
+  },
+  "key_findings": {
+    "false_positive_rate": 25.0,
+    "confidence_threshold_met": 3,
+    "most_common_issues": [
+      [
+        "Minor code quality concerns",
+        1
+      ],
+      [
+        "Task specification too vague",
+        1
+      ],
+      [
+        "No measurable success criteria",
+        1
+      ]
+    ],
+    "performance_impact": "ABC evaluation provides significantly more reliable results with minimal performance overhead"
+  },
+  "detailed_results": {
+    "basic": {
+      "evaluation_type": "basic",
+      "timestamp": "20250720_143819",
+      "total_time": 0.002710103988647461,
+      "summary": {
+        "total_tests": 4,
+        "passed": 4,
+        "failed": 0,
+        "success_rate": 100.0,
+        "average_execution_time": 120.0
+      },
+      "results": [
+        {
+          "test_id": "demo_simple_readme",
+          "status": "simulated_pass",
+          "execution_time": 120.0,
+          "pr_url": "https://github.com/example/repo/pull/861",
+          "files_modified": 1,
+          "confidence_score": null,
+          "validation_details": null
+        },
+        {
+          "test_id": "demo_health_endpoint",
+          "status": "simulated_pass",
+          "execution_time": 120.0,
+          "pr_url": "https://github.com/example/repo/pull/638",
+          "files_modified": 2,
+          "confidence_score": null,
+          "validation_details": null
+        },
+        {
+          "test_id": "demo_improve_performance",
+          "status": "simulated_pass",
+          "execution_time": 120.0,
+          "pr_url": "https://github.com/example/repo/pull/304",
+          "files_modified": 0,
+          "confidence_score": null,
+          "validation_details": null
+        },
+        {
+          "test_id": "demo_input_validation",
+          "status": "simulated_pass",
+          "execution_time": 120.0,
+          "pr_url": "https://github.com/example/repo/pull/322",
+          "files_modified": 3,
+          "confidence_score": null,
+          "validation_details": null
+        }
+      ]
+    },
+    "abc": {
+      "evaluation_type": "abc_compliant",
+      "timestamp": "20250720_143819",
+      "total_time": 0.002218961715698242,
+      "summary": {
+        "total_tests": 4,
+        "original_passed": 4,
+        "truly_successful": 3,
+        "original_success_rate": 100.0,
+        "true_success_rate": 75.0,
+        "overestimation_rate": 25.0,
+        "average_confidence_score": 0.6625,
+        "average_abc_compliance": 0.725
+      },
+      "abc_metrics": {
+        "validation_breakdown": {
+          "task_validity_issues": 1,
+          "pr_validation_concerns": 1,
+          "high_confidence_results": 2,
+          "environmental_violations": 0,
+          "shortcut_attempts": 0
+        },
+        "quality_indicators": {
+          "avg_confidence_score": 0.6625,
+          "avg_compliance_score": 0.725,
+          "tests_meeting_threshold": 3,
+          "false_positive_rate": 0.25
+        },
+        "recommendations": [
+          "CRITICAL: 1 false positives detected - implement stricter PR validation",
+          "Improve task specifications - 1 tests have ambiguous requirements",
+          "Continue using ABC-compliant evaluation to maintain benchmark quality"
+        ]
+      },
+      "results": [
+        {
+          "test_id": "demo_simple_readme",
+          "original_status": "passed",
+          "truly_successful": true,
+          "confidence_score": 0.9,
+          "abc_compliance_score": 0.95,
+          "validation_issues": [],
+          "execution_time": 90.0
+        },
+        {
+          "test_id": "demo_health_endpoint",
+          "original_status": "passed",
+          "truly_successful": true,
+          "confidence_score": 0.75,
+          "abc_compliance_score": 0.8,
+          "validation_issues": [
+            "Minor code quality concerns"
+          ],
+          "execution_time": 150.0
+        },
+        {
+          "test_id": "demo_improve_performance",
+          "original_status": "passed",
+          "truly_successful": false,
+          "confidence_score": 0.2,
+          "abc_compliance_score": 0.3,
+          "validation_issues": [
+            "Task specification too vague",
+            "No measurable success criteria",
+            "Expected outcomes not specific enough"
+          ],
+          "execution_time": 180.0
+        },
+        {
+          "test_id": "demo_input_validation",
+          "original_status": "passed",
+          "truly_successful": true,
+          "confidence_score": 0.8,
+          "abc_compliance_score": 0.85,
+          "validation_issues": [
+            "Some validation requirements could be more specific"
+          ],
+          "execution_time": 200.0
+        }
+      ]
+    }
+  },
+  "recommendations": [
+    "CRITICAL: 1 false positives detected - implement stricter PR validation",
+    "Improve task specifications - 1 tests have ambiguous requirements",
+    "Continue using ABC-compliant evaluation to maintain benchmark quality"
+  ]
+}

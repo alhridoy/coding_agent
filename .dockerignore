@@ -1,0 +1,58 @@
+# Git and version control
+.git
+.gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test files
+test_*.py
+*_test.py
+
+# Development files
+*.log
+*.json
+
+# Documentation that's not essential
+*.md
+!README.md
+
+# Evaluation system (not needed for core API)
+src/evaluation/
+
+# Web interface (optional)
+src/web/
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# Environment files (should be injected in deployment)
+.env
+.env.local
+.env.production
+
+# Temporary files
+tmp/
+temp/

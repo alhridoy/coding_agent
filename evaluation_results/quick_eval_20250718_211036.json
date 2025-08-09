@@ -1,0 +1,67 @@
+{
+  "summary": {
+    "total_tests": 3,
+    "passed": 0,
+    "failed": 3,
+    "timeout": 0,
+    "success_rate": 0.0,
+    "average_execution_time": 10.406503995259603,
+    "average_quality_score": 79.0
+  },
+  "results": [
+    {
+      "test_id": "license_addition",
+      "status": "failed",
+      "execution_time": 10.499208927154541,
+      "pr_url": null,
+      "error": null
+    },
+    {
+      "test_id": "gitignore_creation",
+      "status": "failed",
+      "execution_time": 9.974478006362915,
+      "pr_url": null,
+      "error": null
+    },
+    {
+      "test_id": "basic_readme_enhancement",
+      "status": "failed",
+      "execution_time": 10.745825052261353,
+      "pr_url": null,
+      "error": null
+    }
+  ],
+  "metrics": {
+    "total_files_modified": 0,
+    "total_errors": 0,
+    "total_warnings": 0
+  },
+  "backspace_metrics": {
+    "streaming_compliance": {
+      "score": 0,
+      "reason": "No streaming tests executed"
+    },
+    "pr_quality_score": 0.0,
+    "specification_adherence": {
+      "capabilities_score": 0.5,
+      "has_repo_cloning": true,
+      "has_file_modification": false,
+      "has_git_operations": true,
+      "has_pr_creation": false,
+      "overall_adherence": 50.0
+    },
+    "ready_for_production": false
+  },
+  "recommendations": [
+    "Improve reliability: 3 tests failed to create PRs",
+    "Increase success rate to >90% for production readiness"
+  ],
+  "tier_performance": {
+    "easy": {
+      "count": 3,
+      "success_rate": 0.0,
+      "average_time": 10.406503995259603,
+      "ready": false
+    }
+  }
+}
